@@ -6,6 +6,7 @@ import Intro from "./pages/Intro";
 import SkillPart from "./pages/SkillPart";
 import ProjectPart from "./pages/ProjectPart";
 import Profile from "./pages/Profile";
+import CustomCursor from "./Components/CustomCursor";
 
 function Root() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function Root() {
 
   return (
     <>
+      <CustomCursor />
       <GlobalStyles />
       <Intro />
       <Profile />

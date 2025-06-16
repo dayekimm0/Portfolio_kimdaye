@@ -22,6 +22,7 @@ const GlobalStyles = createGlobalStyle`
     --dark: #000;
     --border: #ccc;
     --accent: ##b1d4ff;
+    --sub: #909090;
 
   }
 
@@ -33,7 +34,8 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Unbounded", "pretendard", sans-serif;
     font-size: 1.6rem;
     height: auto;
-    overflow: hidden; 
+    overflow: hidden;
+    cursor: none;
   }
 `;
 

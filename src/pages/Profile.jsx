@@ -45,7 +45,7 @@ const ProfileDesc = styled.div`
     font-size: 2.4rem;
     font-family: "pretendard";
     font-weight: 600;
-    color: #909090;
+    color: var(--sub);
   }
 `;
 
@@ -57,11 +57,19 @@ const Introduce = styled.div`
   }
   p {
     font-size: 2rem;
-    color: #909090;
+    color: var(--sub);
   }
 `;
 
-const Education = styled.div``;
+const Education = styled.div`
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+    color: var(--sub);
+  }
+`;
 
 const Award = styled.div``;
 
@@ -84,7 +92,22 @@ const Profile = () => {
           <p>2001.10.30</p>
           <p>INFP</p>
         </Introduce>
-        <Education></Education>
+        <Education>
+          <h1>Education</h1>
+          <p>
+            <b>2023.11</b>
+            ICT 창의 융합 캡스톤디자인 경진대회 산학협동상
+          </p>
+          <p>
+            <b>2022.11</b>
+            한국인터넷방송통신학회 국내 학술대회 우수논문상 (기능성 스마트
+            창문제어 연구)
+          </p>
+          <p>
+            <b>2022.07</b>
+            인공지능전문가 자격증 (사)국제문화기술진흥원
+          </p>
+        </Education>
         <Award></Award>
       </SubProfile>
     </Container>
