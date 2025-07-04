@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ScrollSections from "../Components/ScrollSections";
 
 const Container = styled.div`
   width: 100%;
@@ -7,7 +8,11 @@ const Container = styled.div`
 `;
 
 const TeamProject = () => {
-  return <Container>TeamProject</Container>;
+  return (
+    <Container>
+      <ScrollSections />
+    </Container>
+  );
 };
 
 export default TeamProject;
