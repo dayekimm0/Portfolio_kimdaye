@@ -59,7 +59,6 @@ const SubProfile = styled.div`
   gap: 40px;
   position: absolute;
   right: 5%;
-  border: 1px solid #f00;
 `;
 
 const TopPart = styled.div`
@@ -67,7 +66,6 @@ const TopPart = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: start;
-  border: 1px solid #f00;
   div {
     h1 {
       font-size: 3rem;
