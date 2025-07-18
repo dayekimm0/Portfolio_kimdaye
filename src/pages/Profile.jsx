@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import profileImg from "../images/profileImg.png";
-import profileObj from "../images/profileRotate.svg";
-import CircleText from "../Components/CircleText";
+import RotatingText from "../Components/RotatingText";
 
 const Container = styled.div`
   width: 100%;
@@ -56,7 +55,7 @@ const SubProfile = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  gap: 40px;
+  gap: 120px;
   position: absolute;
   right: 5%;
 `;
@@ -68,11 +67,11 @@ const TopPart = styled.div`
   align-items: start;
   div {
     h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       margin-bottom: 20px;
     }
     p {
-      font-size: 2rem;
+      font-size: 2.4rem;
       color: var(--sub);
       margin-bottom: 10px;
       b {
@@ -84,11 +83,11 @@ const TopPart = styled.div`
 
 const Education = styled.div`
   h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 20px;
   }
   p {
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: var(--sub);
     margin-bottom: 10px;
     b {
@@ -158,7 +157,7 @@ const Profile = () => {
           </p>
         </Education>
       </SubProfile>
-      {/* <CircleText text="FrontEnd Developer Kim Daye" /> */}
+      <RotatingText />
     </Container>
   );
 };

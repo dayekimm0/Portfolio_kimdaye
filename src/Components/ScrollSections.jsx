@@ -5,12 +5,17 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import projectThumb1 from "../images/projectThumb1.png";
 import projectThumb2 from "../images/projectThumb2.png";
 import projectThumb3 from "../images/projectThumb3.png";
+import projectThumb4 from "../images/projectThumb4.png";
 import thumbBar from "../images/thumbBar.png";
 import figmaIcon from "../images/figmaIcon.svg";
 import htmlIcon from "../images/htmlIcon.svg";
 import cssIcon from "../images/cssIcon.svg";
 import jsIcon from "../images/jsIcon.svg";
 import reactIcon from "../images/reactIcon.svg";
+import viteIcon from "../images/viteIcon.svg";
+import styledComponentsIcon from "../images/styledComponentsIcon.svg";
+import firebaseIcon from "../images/firebaseIcon.svg";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -111,9 +116,13 @@ const MoreBtn = styled.button`
   background: transparent;
   border: none;
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   cursor: pointer;
+  font-family: "Unbounded";
   padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 
   &:hover {
     opacity: 0.7;
@@ -173,7 +182,7 @@ const ScrollSections = () => {
       thumb: projectThumb2,
       overlay: 2,
       title: "BE :",
-      desc: " BE는 국내 비건 시장의 성장과 소비자들의 비건 제품 및 브랜드에 대한 관심 증가에 따라 탄생한 웹사이트입니다.\n신뢰할 수 있는 비건 제품 정보를 제공하고, 다양한 브랜드를 소개하여 소비자들이 쉽게 접근할 수 있도록 돕는 것이 목표입니다.",
+      desc: " BE는 국내 비건 시장의 성장과 소비자들의 비건 제품 및 브랜드에 대한 관심 증가에 따라 탄생한 웹사이트입니다. 신뢰할 수 있는 비건 제품 정보를 제공하고, 다양한 브랜드를 소개하여 소비자들이 쉽게 접근할 수 있도록 돕는 것이 목표입니다.",
       icons: [figmaIcon, htmlIcon, cssIcon, jsIcon],
       moreLink: "https://vegan-beproject.netlify.app/",
     },
@@ -184,6 +193,21 @@ const ScrollSections = () => {
       title: "WOOFY",
       desc: "프리미엄 반려동물 패션 편집샵 플랫폼 WOOFY\n흩어져 있어 찾기 어려운 반려동물 패션, 브랜드를 소개하며, 반려동물과 보호자 모두를 위한 스타일리시한 라이프스타일을 제안합니다. 단순한 쇼핑몰이 아닌 패션 브랜드와 아트워크 스토리가 결합된 라이프스타일 큐레이션 공간을 지향합니다.",
       icons: [figmaIcon, htmlIcon, cssIcon, jsIcon],
+      moreLink: "https://wo0fy.netlify.app/",
+    },
+    {
+      bg: projectThumb4,
+      thumb: projectThumb4,
+      overlay: 2,
+      title: "ROOKie",
+      desc: "ROOKie는 야구 팬덤의 급성장에 발맞춰 팬덤의 니즈를 충족시키기 위해 기획된 새로운 커머스 서비스에서 시작했습니다.\n 두 단계의 프로젝트를 통해 야구 팬덤의 일상 속으로 깊숙이 스며들어 새로운 팬 경험의 중심이 되는 커머스와 OTT를 아우르는 야구 통합 플랫폼으로 확장되었습니다.",
+      icons: [
+        figmaIcon,
+        reactIcon,
+        viteIcon,
+        styledComponentsIcon,
+        firebaseIcon,
+      ],
       moreLink: "https://wo0fy.netlify.app/",
     },
   ];
@@ -234,10 +258,9 @@ const ScrollSections = () => {
                 ))}
               </div>
 
-              <MoreBtn
-                onClick={() => (window.location.href = project.moreLink)}
-              >
-                MORE &gt;
+              <MoreBtn onClick={() => window.open(project.moreLink, "_blank")}>
+                SEE LIVE
+                <FaArrowUpRightFromSquare style={{ marginLeft: "6px" }} />
               </MoreBtn>
             </ContentBox>
 

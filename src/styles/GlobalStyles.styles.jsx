@@ -36,6 +36,8 @@ const GlobalStyles = createGlobalStyle`
     height: auto;
     overflow: hidden;
     cursor: none;
+    background-color: #000;
+    transition: background-color 0.5s ease;
   }
 `;
 
