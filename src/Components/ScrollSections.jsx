@@ -103,7 +103,7 @@ const ContentBox = styled.div`
   .icon-group {
     display: flex;
     gap: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 320px;
 
     .icon {
       width: 90px;
@@ -115,9 +115,8 @@ const ContentBox = styled.div`
 const MoreBtn = styled.button`
   background: transparent;
   border: none;
-  color: #fff;
+  color: var(--light);
   font-size: 2.4rem;
-  cursor: pointer;
   font-family: "Unbounded";
   padding: 0;
   display: flex;
@@ -126,6 +125,7 @@ const MoreBtn = styled.button`
 
   &:hover {
     opacity: 0.7;
+    cursor: none;
   }
 `;
 
@@ -204,11 +204,11 @@ const ScrollSections = () => {
       icons: [
         figmaIcon,
         reactIcon,
-        viteIcon,
         styledComponentsIcon,
+        viteIcon,
         firebaseIcon,
       ],
-      moreLink: "https://wo0fy.netlify.app/",
+      moreLink: "https://rookie-dd013.firebaseapp.com/",
     },
   ];
 

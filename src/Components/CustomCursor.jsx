@@ -18,7 +18,7 @@ const CursorDot = styled.div`
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
-  background-color: white;
+  background: var(--light);
   transition: background-color 0.2s ease, transform 0.1s ease;
 `;
 
